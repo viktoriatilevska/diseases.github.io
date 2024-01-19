@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Visualization protocol | Data visualization course</title>
+		<meta name="description"content="Project description">
+		<meta name="author" content="Authors' name and ssurname">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- allow webpage to be run in full-screen mode -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- set nav bar color -->
+		<meta name="theme-color" content="black"> <!-- Chrome, Firefox OS and Opera -->
+		<meta name="msapplication-navbutton-color" content="black"> <!-- Windows Phone -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"> <!-- iOS Safari -->
+		<link type="text/css" rel="stylesheet" href="../../../style/style.css">	
+	</head>
+	<body>
+		<div id="topbar">
+			<nav>
+				<div class="go_home">
+					<a href="../../../../" title="Go back home">
+						<span>
+							←
+						</span>
+						<span>
+							Data visualization course
+						</span>
+					</a>
+				</div>
+			</nav>
+		</div>
+		<main style="width: 100%;">
+			<header class="protocol">
+				<span>
+					<a href="../../../../" title="Go back">
+						← Back
+					</a>
+				</span>
+				<h1>
+					Impacts of anthropization on mosquitoes
+				</h1>
+				<h2>
+					Visualization protocol
+				</h2>
+			</header>
+			<article>
+				<section>
+					<h4>Timestamp</h4>
+					<p>1990-2019</p><br/>
+					
+					<h4>Data source</h4>
+					<p><a href="https://www.kaggle.com/datasets/mpwolke/cusersmarildownloadsgcbcsv">Impacts of anthropization on mosquitoes</a></p>
+					<p>Article: owidmalaria</p>
+					<p>Author: Antoine Perrin, Olivier Glaizot, Philippe Christe</p>
+					<p>Journal: Global Change Biology</p>
+					<p>Source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9828797/a</p>
+
+
+					<h4>Dataset</h4>
+					<p>
+						<a href="../../datasets+metadata/gcb.csv">Download the dataset</a>
+					</p><br/>
+
+					<h4>Metadata</h4>
+        			<p><strong>geographic_country:</strong> The specific countries or regions under consideration.</p>
+        			<p><strong>disturbance_type:</strong> Divided into two crucial categories - urbanization and agriculture. Each entry in the dataset is associated with either urbanization or agriculture, providing a clear distinction between these two crucial types of disturbances.</p>
+        			<p><strong>geographic_continent:</strong> specifies the geographic continent associated with each country in the dataset.</p>
+
+					<section>
+						<h4>Protocol</h4>
+
+						<h4>Data quality check:</h4>
+							<ul>
+								<li>Examine the dataset for outliers and missing values</li>
+								<li>Address missing values and outliers through proper measures</li>
+							</ul>
+
+						<h4>Country selection:</h4>
+						<ul>
+							<li>Filter out non-African countries based on the column ‘geographic_continent’.</li>
+						</ul>
+
+						<h4>Column filtration:</h4>
+						<ul>
+							<li>Remove unnecessary columns</li>
+						</ul>
+
+						<h4>Filter the year:</h4>
+						<ul>
+							<li>For consistency, we focused our analysis on the years 1990 to 2019, ensuring a standardized timeframe throughout our study.</li>
+						</ul>
+						<h4>Group by the disturbance type column:</h4>
+						<ul>
+							<li>We organized the data by grouping African countries based on their disturbance types, creating a dataset that pairs countries with their respective disturbance categories.</li>
+						</ul>
+					</section>						
+				</section>
+			</article>
+		</main>
+	</body>
+</html>
